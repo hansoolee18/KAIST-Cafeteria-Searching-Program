@@ -1,0 +1,640 @@
+knowledge_dict = {
+    # 위치 dict 형식으로 입력
+    "east": { #학교 정문 기준 동측 
+        # 동측 식당 리스트: 
+        # 1. 동맛골 학생식당 -> dongmatgol graduate cafeteria, 
+        # 2. 동맛골 교수식당 -> dongmatgol faculty cafeteria
+        '2021-12-09': [
+            # 3개의 리스트 형식으로 [] [] [] 각 아침, 점심, 저녁순서 입니다.
+            [
+                # breakfast
+                [['rice','spinach soybean paste soup',
+                  'spicy stewed pork','devil tongue jelly salad',
+                  'roasted laver','rice crust soup', 
+                  'kimchi'],'"dongmatgol graduate cafeteria"']
+            ],
+            [
+                # lunch
+                [['black rice', 'steamed five grain rice', 
+                  'egg soup', 'beef and mushroom bulgogi', 
+                  'chuncheon style spicy style spicy stir fried chickin',
+                  'chicken cutlet', 'pan fried bean curd',
+                  'cupo styple banquet noodles', 
+                  'stir fried rice cake', 'kimchi'],'"dongmatgol graduate cafeteria"'],
+                [['acorn jelly bibimbap', 'soybean paste soup',
+                  'multi grain rice', 'green salad', 
+                  'seasoned dried radish leaf', 'squid and pork belly bulgogi',
+                  'mung bean jelly and laver powder salad', 'seasoned dried radish leaf',
+                  'soybean paste soup with young', 'summer radish',
+                  'scorched soup', 'ginger tea', 'kimchi'],'"dongmatgol faculty cafeteria"']
+            ],
+            [
+                # dinner
+                [['spicy stir fried chicken','undon soup with fried tofu', 
+                  'noodle soup with dried pollack', 
+                  'deep fried jumbo sized steamed meet dumpling', 
+                  'kimchi'], '"dongmatgol graduate cafeteria"'],
+                [['multi grain rice', 'cabbage soup',
+                  'boiled pollack', 'steamed eggs stuffed with soft tofu', 
+                  'seasoned dried radish', 'green salad',
+                  'scorched soup', 'ginger tea', 
+                  'kimchi'],'"dongmatgol faculty cafeteria"']
+            ]
+        ],
+        '2021-12-10': [
+            # 3개의 리스트 형식으로 [] [] [] 각 아침, 점심, 저녁순서 입니다.
+            [
+                # breakfast
+            ],
+            [
+                # lunch
+                [['black rice','steamed five grain rice', 
+                  'napa cabbage soup', 'napa cabbage roll with pork',
+                  'spicy chicken with cream sauce', 'spicy stir fried ham and vegetable'
+                  'braised bean curd', 'chicken nuggets',
+                  'steamed bun with red bean filling', 'blanched bun with red bean filling',
+                  'cucumber fresh salad', 'ezabel salad', 'roasted laver',
+                  'blanched broccoli salad', 'stir fried shiitake mushroom',
+                  'kimchi'], '"dongmatgol graduate cafeteria"'],     
+                [['deep fried chicken with curry rice', 'udon soup', 
+                  'twisted bread stick', 'green salad', 
+                  'multi grain rice','shank bone soup with dried cabbage',
+                  'stir fried chicken with sesame leaf', 'glazed fried dumpling tbities',
+                  'seasoned with mushroom','scorched soup', 'peach black tea'],
+                  '"dongmatgol faculty cafeteria"'] 
+
+            ],
+            [
+                # dinner
+                [['spicy seafood and green onions soup with rice','glazed fried chicken bites', 
+                  'pickled radish salad', 'udon soup',
+                  'charcoal grilled pork withrice', 
+                  'kimchi'], '"dongmatgol graduate cafeteria"'],               
+                [['spicy seafood and green onion soup with rice', 
+                  'glazed fried chicken bites', 'seasoned pickled radish'
+                  'kimchi', 'green-salad',
+                  'scorched soup', 'peach black tea'],'"dongmatgol faculty cafeteria"']
+            ]
+        ],
+        '2021-12-11': [
+            # 3개의 리스트 형식으로 [] [] [] 각 아침, 점심, 저녁순서 입니다.
+            [
+                # breakfast
+                [['rice','seaweed soup',
+                  'scrambled egg','bracken',
+                  'laver','kimchi'],'"dongmatgol graduate cafeteria"']
+            ],
+            [
+                # lunch
+                [['rice', 'bean sprouts soup', 
+                  'stir fried chicken', 'pan flake noodles', 
+                  'spinach','kimchi'],'"dongmatgol graduate cafeteria"'] 
+            ],
+            [
+                # dinner
+                [['rice','bean paste soup', 
+                  'pork chop', 'fried spring rolls', 
+                  'bean sprouts', 'kimchi'], '"dongmatgol graduate cafeteria"']
+            ]
+        ],
+        '2021-12-12': [
+            # 3개의 리스트 형식으로 [] [] [] 각 아침, 점심, 저녁순서 입니다.
+            [
+                # breakfast
+            ],
+            [
+                # lunch
+                [['rice', 'spicy chicken soup', 
+                  'braised fish balls in teriyaki sauce', 
+                  'stir fired zucchini', 'chicory oriental salad',
+                  'kimchi'], '"dongmatgol graduate cafeteria"']
+            ],
+            [
+                # dinner
+                [['rice','soybean paste soup with young summer radish', 
+                  'squid and pork bulgogi', 'steamed bean curd', 
+                  'white bean sprouts salad', 'kimchi'], 
+                  '"dongmatgol graduate cafeteria"']
+            ]
+        ]
+    },
+    "west": { # 학교 정문 기준 서측
+
+        # 서측 식당 리스트: 
+        # 1. 서맛골 서측 학생 식당 -> seomatgol west campus cafeteria, 
+        # 2. 더큰 도시락 -> durken dosirak
+
+        '2021-12-09': [
+            # 3개의 리스트 형식으로 [] [] [] 각 아침, 점심, 저녁순서 입니다.
+            [
+                # breakfast
+                [['rice','radish soup', 'meatball','chives',
+                  'laver','kimchi'],'"seomatgol west campus cafeteria"'],
+                [['buldon packed meal','jechi packed meal','chibul packed meal',
+                  'pig packed meal','jebul packed meal','bone haejang soup',
+                  'pork belly kimchi fried rice',
+                  'spam kimchi rice bowl'],'"durken dosirak"']
+            ],
+            [
+                # lunch
+                [['rice', 'chicken soup', 'pork cutlet', 'butter potato', 
+                  'mushroom','kimchi'],'"seomatgol west campus cafeteria"'],
+                [['buldon packed lunch','jechi packed lunch','chibul packed lunch',
+                  'pig packed lunch','jebul packed lunch','bone haejang soup',
+                  'pork belly kimchi fried rice',
+                  'spam kimchi rice bowl'],'"durken dosirak"']
+            ],
+            [
+                # dinner
+                [['rice','seaweed soup', 
+                  'stir-fried pork', 'laver', 
+                  'cabbage', 'kimchi'], '"seomatgol west campus cafeteria"'],
+                [['buldon packed dinner','jechi packed dinner','chibul packed dinner',
+                  'pig packed dinner','jebul packed dinner','bone haejang soup',
+                  'pork belly kimchi fried rice',
+                  'spam kimchi rice bowl'],'"durken dosirak"']
+            ]
+        ],
+        '2021-12-10': [
+            # 3개의 리스트 형식으로 [] [] [] 각 아침, 점심, 저녁순서 입니다.
+            [
+                # breakfast
+                [['rice','soft tofu soup','squail egg','anchovy',
+                  'laver','kimchi'],'"seomatgol west campus cafeteria"'],
+                [['buldon packed meal','jechi packed meal','chibul packed meal',
+                  'pig packed meal','jebul packed meal','bone haejang soup',
+                  'pork belly kimchi fried rice',
+                  'spam kimchi rice bowl'],'"durken dosirak"']
+            ],
+            [
+                # lunch
+                [['rice', 'bean paste soup', 'steamed chicken', 'mapa tofu', 
+                  'spinach','kimchi'],'"seomatgol west campus cafeteria"'],
+                [['buldon packed lunch','jechi packed lunch','chibul packed lunch',
+                  'pig packed lunch','jebul packed lunch','bone haejang soup',
+                  'pork belly kimchi fried rice',
+                  'spam kimchi rice bowl'],'"durken dosirak"']
+            ],
+            [
+                # dinner
+                [['rice','pork kimchi stew', 'steamed dumpling', 'fish cake', 
+                  'crown daisy', 'kimchi'], '"seomatgol west campus cafeteria"'],
+                [['buldon packed dinner','jechi packed dinner','chibul packed dinner',
+                  'pig packed dinner','jebul packed dinner','bone haejang soup',
+                  'pork belly kimchi fried rice',
+                  'spam kimchi rice bowl'],'"durken dosirak"']
+            ]
+        ],
+        '2021-12-11':[
+            # 3개의 리스트 형식으로 [] [] [] 각 아침, 점심, 저녁순서 입니다.
+            [
+                # breakfast
+                [['rice','shrimp radish soup','seasoned egg', 'bean sprouts', 
+                  'laver', 'kimchi'], '"seomatgol west campus cafeteria"']
+            ],
+            [
+                # lunch
+                [['rice','rice soybean soup', 'chicken and kimchi', 'acorn jelly', 
+                  'pakchoi', 'kimchi'], '"seomatgol west campus cafeteria"']
+            ],
+            [
+                # dinner
+                [['rice','beef radish soup','sweet and sour pork', 'steamed egg', 
+                  'bean sprouts', 'kimchi'], '"seomatgol west campus cafeteria"']
+            ]
+        ],
+        '2021-12-12':[
+            # 3개의 리스트 형식으로 [] [] [] 각 아침, 점심, 저녁순서 입니다.
+            [
+                # breakfast
+                [['rice','mushroom soup', 'dumpling', 'bean sprouts', 
+                  'laver', 'kimchi'], '"seomatgol west campus cafeteria"']
+            ],
+            [
+                # lunch
+                [['rice','soft tofu soup', 'flat meat fry', 'steamed egg', 
+                  'mushroom', 'kimchi'], '"seomatgol west campus cafeteria"']            
+            ],
+            [
+                # dinner
+                [['rice','bean paste soup', 'stir fried chicken', 'laver', 
+                  'mushroom', 'kimchi'], '"seomatgol west campus cafeteria"']               
+            ]
+        ]
+    },
+    "north": { # 학교 정문 기준으로 북측식당
+        # 북측 식당 리스트: 
+        # 1. 카이마루 학부생 식당 -> kaimaru undergraduate cafeteria (영어명), 
+        # 2. 오늘도 든든 -> happy tummy everyday (영어명)    
+        # 3. 휴김밥 전문점 -> huegimbap (영어명)
+        # 4. 리틀 하노이 전문점 -> 
+         '2021-12-09': [
+            # 3개의 리스트 형식으로 [] [] [] 각 아침, 점심, 저녁순서 입니다.
+            [  # 리스트 형식으로 각 식당
+                # breakfast                
+            ],
+            [
+                # lunch
+                [['boiled rice', 'multigrain rice', 
+                  'young radish soup', 'stir fried pork', 
+                  'braised potato', 'seasoned vegetable radish', 
+                  'curry with grilled sausage', 'takoyaki', 
+                  'korean soybean paste stew', 
+                  'vegetable salad'], '"kaimaru undergraduate cafeteria"'],
+                [['porkstew', 'softbean stew', 'broil with salt', 'spicyport',
+                  'braised spicy chicken', 'rice topped with tuna', 'tuna mayo'],'"happy tummy everyday"'],
+                [['omurice', 'rice cake ramen', 'tteokbokki',
+                  'handmade pork cutlet', 'sweet potato pork cutlet', 
+                  'cheese pork cutlet', 'jjolmyeon',
+                  'champon ramen', 'cheese ramen', 'rice balls' 
+                  'kimchi gimbap', 'cheese gimbap', 'tuna gimbap'],'"huegimbap"'],
+                [['chicken pho', 'spicy beef pho', 
+                  'beef pho', 'spicy pho', 'hot seafood pho',
+                  'spicy pho', 'pork bulgogi cold pho',
+                  'pork bulgogi bibimbab pho', 'mara pho',
+                  'spring roll', 'buncha spring roll',
+                  'buncha', 'buntis xao', 'pho-peye porridge'],'"littlehanoi"'],
+                [['jja jang myeon','gan jja jang', 
+                  'well chai tang su yug', 'jjam bbong',
+                  'jjam bbong bab', 'mini tang su yug',
+                  'bok eum bab', 'gong gi bab', 
+                  'gun man du', 'jjam jja myeon',
+                  'tang jja myeon', 'bok jja myeon',
+                  'tang bok bab', 'bok jjam myeon'],'"wellchai"'], 
+                [['egg toast', 'vegetable toast',
+                  'ham and cheese toast', 'hot bacon toast',
+                  'pizza toast', 'sweet potato toast'],'"toast cafe"'],
+                [['spicy pork stew', 'spicy kimchi pork',
+                  'buckwheat noodles and fried shrimp',
+                  'cheese spicy chicken','broiled pork',
+                  'cheese pork cutlet', 'rice topped with tuna',
+                  'chicken cutlet mayo'],'"taewoolguan ttuk bae gi"']
+            ],
+            [
+                # dinner
+                [['stir fried sausage', 'bean sprouts soup', 
+                  'bulgogi bake', 'seasoned noodel', 
+                  'radish kimchi', 'macaroni salad'], '"kaimaru undergraduate cafeteria"'],
+                [['porkstew', 'softbean stew', 
+                  'broil with salt', 'spicyport',
+                  'braised spicy chicken', 'rice topped with tuna', 'tuna mayo'],
+                  '"happy tummy everyday"'],
+                [['omurice', 'rice cake ramen', 'tteokbokki',
+                  'handmade pork cutlet', 'sweet potato pork cutlet', 
+                  'cheese pork cutlet', 'jjolmyeon',
+                  'champon ramen', 'cheese ramen', 'rice balls' 
+                  'kimchi gimbap', 'cheese gimbap', 'tuna gimbap'],'"huegimbap"'],
+                [['chicken pho', 'spicy beef pho', 
+                  'beef pho', 'spicy pho', 'hot seafood pho',
+                  'spicy pho', 'pork bulgogi cold pho',
+                  'pork bulgogi bibimbab pho', 'mara pho',
+                  'spring roll', 'buncha spring roll',
+                  'buncha', 'buntis xao', 'pho-peye porridge'],'"littlehanoi"'],
+                [['jja jang myeon','gan jja jang', 
+                  'well chai tang su yug', 'jjam bbong',
+                  'jjam bbong bab', 'mini tang su yug',
+                  'bok eum bab', 'gong gi bab', 
+                  'gun man du', 'jjam jja myeon',
+                  'tang jja myeon', 'bok jja myeon',
+                  'tang bok bab', 'bok jjam myeon'],'"wellchai"'], 
+                [['pork cutlet toast', 'bulgogi pizza toast',
+                  'hot bacon galbi toast', 'vegetable vagel',
+                  'cream vagel', 'hot chicken toast'],'"toast cafe"'],
+                [['spicy pork stew', 'spicy kimchi pork',
+                  'buckwheat noodles and fried shrimp',
+                  'cheese spicy chicken','broiled pork',
+                  'cheese pork cutlet', 'rice topped with tuna',
+                  'chicken cutlet mayo'],'"taewoolguan ttuk bae gi"']
+            ]
+        ],
+        '2021-12-10': [
+            # 3개의 리스트 형식으로 [] [] [] 각 아침, 점심, 저녁순서 입니다.
+            [   # 리스트 형식으로 각 식당
+                # breakfast
+            ],
+            [
+                # lunch
+                [['boiled rice', 'multigrain rice', 
+                  'seaweed soup', 'meatballs ratatouille',
+                  'braised tofu', 'sedum with vinnegar red pepper sauce'
+                  'bacon cream pasta', 'croissant'
+                  'korean soybean paste stew', 'vegetable salad'], '"kaimaru undergraduate cafeteria"'],
+                [['porkstew', 'softbean stew', 
+                  'broil with salt', 'spicyport',
+                  'braised spicy chicken', 'rice topped with tuna',
+                  'tuna mayo'],'"happy tummy everyday"'],
+                [['omurice', 'rice cake ramen', 'tteokbokki',
+                  'handmade pork cutlet', 'sweet potato pork cutlet', 
+                  'cheese pork cutlet', 'jjolmyeon',
+                  'champon ramen', 'cheese ramen', 'rice balls' 
+                  'kimchi gimbap', 'cheese gimbap', 'tuna gimbap'],'"huegimbap"'],
+                [['chicken pho', 'spicy beef pho', 
+                  'beef pho', 'spicy pho', 'hot seafood pho',
+                  'spicy pho', 'pork bulgogi cold pho',
+                  'pork bulgogi bibimbab pho', 'mara pho',
+                  'spring roll', 'buncha spring roll',
+                  'buncha', 'buntis xao', 'pho-peye porridge'],'"littlehanoi"'],
+                [['jja jang myeon','gan jja jang', 
+                  'well chai tang su yug', 'jjam bbong',
+                  'jjam bbong bab', 'mini tang su yug',
+                  'bok eum bab', 'gong gi bab', 
+                  'gun man du', 'jjam jja myeon',
+                  'tang jja myeon', 'bok jja myeon',
+                  'tang bok bab', 'bok jjam myeon'],'"wellchai"'], 
+                [['rice cake stake toast', 'royal galbi potato toast',
+                  'cupbab', 'egg toast', 'vegetable toast',
+                  'potato toast', 'royal toast'],'"toast cafe"'],
+                [['spicy pork stew', 'spicy kimchi pork',
+                  'buckwheat noodles and fried shrimp',
+                  'cheese spicy chicken','broiled pork',
+                  'cheese pork cutlet', 'rice topped with tuna',
+                  'chicken cutlet mayo'],'"taewoolguan ttuk bae gi"']
+            ],
+            [
+                # dinner
+                [['spicy beef stew', 'boiled rice',
+                 'multigrain rice', 'friedfish cutlet',
+                 'tartar sauce', 'stir fried garlic cloves',
+                 'radish kimchi', 'vegetable salad'], '"kaimaru undergraduate cafeteria"'],
+                [['porkstew', 'softbean stew', 
+                  'broil with salt', 'spicyport',
+                  'braised spicy chicken', 'rice topped with tuna', 
+                  'tuna mayo'],'"happy tummy everyday"'],
+                [['omurice', 'rice cake ramen', 'tteokbokki',
+                  'handmade pork cutlet', 'sweet potato pork cutlet', 
+                  'cheese pork cutlet', 'jjolmyeon',
+                  'champon ramen', 'cheese ramen', 'rice balls' 
+                  'kimchi gimbap', 'cheese gimbap', 'tuna gimbap'],'"huegimbap"'],
+                [['chicken pho', 'spicy beef pho', 
+                  'beef pho', 'spicy pho', 'hot seafood pho',
+                  'spicy pho', 'pork bulgogi cold pho',
+                  'pork bulgogi bibimbab pho', 'mara pho',
+                  'spring roll', 'buncha spring roll',
+                  'buncha', 'buntis xao', 'pho-peye porridge'],'"littlehanoi"'],
+                [['jja jang myeon','gan jja jang', 
+                  'well chai tang su yug', 'jjam bbong',
+                  'jjam bbong bab', 'mini tang su yug',
+                  'bok eum bab', 'gong gi bab', 
+                  'gun man du', 'jjam jja myeon',
+                  'tang jja myeon', 'bok jja myeon',
+                  'tang bok bab', 'bok jjam myeon'],'"wellchai"'], 
+                [['pork cutlet toast', 'bulgogi pizza toast',
+                  'hot bacon galbi toast', 'vegetable vagel',
+                  'cream vagel', 'hot chicken toast'],'"toast cafe"'],
+                [['spicy pork stew', 'spicy kimchi pork',
+                  'buckwheat noodles and fried shrimp',
+                  'cheese spicy chicken','broiled pork',
+                  'cheese pork cutlet', 'rice topped with tuna',
+                  'chicken cutlet mayo'],'"taewoolguan ttuk bae gi"']
+            ]
+        ],
+        '2021-12-11': [
+            # 3개의 리스트 형식으로 [] [] [] 각 아침, 점심, 저녁순서 입니다.
+            [  # 리스트 형식으로 각 식당
+            ],  # breakfast
+            [
+                # lunch
+                [['boied rice', 'multigrain rice', 
+                  'fried pork cutlet', 'spicy seasoned jjol noodle',
+                  'seasoned seaweed', 'radish kimchi',
+                  'stir fried rice', 'fried with sundae',
+                  'korean soybean paste stew', 'macaroni salad', 'kimchi'], '"kaimaru undergraduate cafeteria"'],
+                [['porkstew', 'softbean stew', 
+                  'broil with salt', 'spicyport',
+                  'braised spicy chicken', 'rice topped with tuna',
+                  'tuna mayo','kimchi'],'"a happy tummy everyday"'],
+                [['jja jang myeon','gan jja jang', 
+                  'well chai tang su yug', 'jjam bbong',
+                  'jjam bbong bab', 'mini tang su yug',
+                  'bok eum bab', 'gong gi bab', 
+                  'gun man du', 'jjam jja myeon',
+                  'tang jja myeon', 'bok jja myeon',
+                  'tang bok bab', 'bok jjam myeon','kimchi'],'"wellchai"']
+            ],
+            [
+                # dinner
+                [['banquet noodles', 'boiled rice',
+                  'deep fried pork cutlet', 'cabbage kimchi',
+                  'backed hot cake', 'mexican salad'], '"kaimaru undergraduate cafeteria"'],
+                [['jja jang myeon','gan jja jang', 
+                  'well chai tang su yug', 'jjam bbong',
+                  'jjam bbong bab', 'mini tang su yug',
+                  'bok eum bab', 'gong gi bab', 
+                  'gun man du', 'jjam jja myeon',
+                  'tang jja myeon', 'bok jja myeon',
+                  'tang bok bab', 'bok jjam myeon'],'"wellchai"']
+            ]
+        ],
+        '2021-12-12': [
+            # 3개의 리스트 형식으로 [] [] [] 각 아침, 점심, 저녁순서 입니다.
+            [  # 리스트 형식으로 각 식당
+            ],  # breakfast
+            [
+                # lunch
+                [['boied rice', 'multigrain rice', 
+                  'kimchi soup','spicy braised pork with vegetable'
+                  'stir fried black pepper with dried shrimp', 
+                  'seasoned bean sprouts', 'cabbage kimchi'
+                  'vegetable salad with strawberry dressing'], '"kaimaru undergraduate cafeteria"'],
+                [['spicy pork stew', 'spicy kimchi pork',
+                  'buckwheat noodles and fried shrimp',
+                  'cheese spicy chicken','broiled pork',
+                  'cheese pork cutlet', 'rice topped with tuna',
+                  'chicken cutlet mayo'],'"taewoolguan ttuk bae gi"']
+            ],
+            [
+                # dinner
+                [['boiled rice', 'hayashi sauce',
+                  'spanich soup', 'stir fried chinese pork cutlet',
+                  'dumplings with chilli sauce', 
+                  'seasoned Jjol noodel with vegetable',
+                  'kimchi', 'vegetable salad with sesame dressing'], '"kaimaru undergraduate cafeteria"'],
+                [['spicy pork stew', 'spicy kimchi pork',
+                  'buckwheat noodles and fried shrimp',
+                  'cheese spicy chicken','broiled pork',
+                  'cheese pork cutlet', 'rice topped with tuna',
+                  'chicken cutlet mayo'],'"taewoolguan ttuk bae gi"']
+            ]
+        ]
+    }
+}
+
+# 각 키워드가 들어갈 위치에 {} 를 사용해주세요
+location_q = 'Are you on the {} side of the school main gate?:'
+day_q = 'IS today date is {}?:'
+time_q = 'Is it {} right time for you:'
+menu_q = 'Do you want to eat the {} menu'
+time_list = ['breakfast', 'lunch', 'dinner']
+script = """
+카이스트 (1) 위치, (2) 날짜, (3) 시간, (4) 메뉴입력에 따른 식당 추론 질의 응답 프로그램입니다. 
+각 단계별 질문을 보시고 질문에 따라 응답해주세요. 
+"""
+
+def check_search(knowledge_dict):
+    '''
+    답변을 직접 입력받아 선택 
+    :param knowledge_dict: 술어논리 진행을 위해 구축된  지식
+    :return: 선택한 결과 knowledge 반환
+    '''
+    print(", ".join([i for i in knowledge_dict.keys()])) # knowledge_dict 의 술어논리 진행을 위해 구축된  지식의 키값을 모두 , 로 분리해 가져옴
+    while True:
+        answer = input('Please enter a keyword :') 
+        if answer not in knowledge_dict: # 없으면 다시 입력 메시지 보냄
+            print('There is no data that corresponds to your input. Please type it again')
+            continue
+        return knowledge_dict[answer] # 있으면 답 반환
+
+def select_enter(q):
+    '''
+    추론 형식을 knowledge base 제시후 yes/no 선택으로 할지 직접입력으로 할지 선택
+    :return: 선택 결과 True, False
+    '''
+    answer = input('{} : '.format(q)) # 추론을 위한 input 형식을 knowledge base 제시후 yes/no 선택으로 할지 직접입력으로 할지 선택하기 위해 yes 또는 no를 인풋함
+    if answer == 'y' or answer == 'Y' or answer == 'yes':
+        return True  # True가 되면 knowledge base 제시후 직접 타이핑을 통해 input
+    elif answer == 'n' or answer == 'N' or answer == 'no':
+        return False # False가 되면 yes/no 선택을 통해 input
+    print('There is no data that corresponds to your input. Please type it again.')
+    return select_enter(q)
+
+
+
+
+
+def check_stop(): # 처음부터 돌아가 계속 진행될지를 물어봄
+    '''
+    식당 메뉴 찾기를 이어서 할지 여부
+    :return: True or False
+    '''
+    answer = input('Would you like to go on? : ')
+    if answer == 'y' or answer == 'Y' or answer == 'yes':
+        return False # 위에서 yes를 했을때 return False를 하게되면, 다시 처음으로 돌아감
+    return True # False가 아니라 True가 되면 프로그램을 나감
+
+
+def dict_check(knowledge_dict, q, select):
+    '''
+    dictionary 형식의 knowledge를 질의
+    :param knowledge_dict:술어논리 진행을 위해 구축된  지식
+    :param q:  질의 문장
+    :param select: 답변 직접 선택 여부
+    :return: 선택한 결과 knowledge 반환
+    '''
+
+    if select: #true값이면 check search함수를 통해 추론 응답 직접입력, false값이면 while true로 가서 제시된 knowledge base 중 원하는 것을 yes, no로 응답 입력 
+        return check_search(knowledge_dict)
+    while True: 
+        for k in knowledge_dict.keys():
+            answer = input(q.format(k))# yes/no 선택에서 해당 {} 키워드를 넣는 코드
+            if answer == 'y' or answer == 'Y' or answer == 'yes':
+                return knowledge_dict[k]
+            print('You did not select the any choices. Please choose again.')
+            
+
+def time_check(knowledge, q, select):
+    '''
+    아침 점심 저녁을 체크
+    :param knowledge:술어논리 진행을 위해 구축된  지식
+    :param q: 질의 문장
+    :param select: 답변 직접 선택 여부
+    :return: 선택한 결과 knowledge 반환
+    '''
+    if select: #true값이면 아래 프린트후 추론 응답 직접입력, false값이면 아래 while true로 가서 제시된 knowledge base 중 원하는 것을 yes, no로 응답 입력 
+        print('breakfast, lunch, dinner')
+        while True:
+            answer = input('Please enter a keyword :')
+            result = None # 변수 선언
+            if answer == 'breakfast':
+                result = knowledge[0] #응답이 breakfast면, 결과는 knowledge 첫번째 list에서 찾음
+            if answer == 'lunch':
+                result = knowledge[1] #응답이 lunch면, 결과는 knowledge 두번째 list에서 찾음
+            if answer == 'dinner':
+                result = knowledge[2] #응답이 dinner면, 결과는 knowledge 세번째 list에서 찾음
+            if answer is None:
+                print('There is no data that corresponds to your input. Please type it again.')
+                continue
+            return result
+    while True: #true가 아니면, 하나씩 해당하는 knowledge base를 물어봄
+        for i, k in enumerate(['breakfast', 'lunch', 'dinner']):
+            answer = input(q.format(k)) # yes/no 선택에서 해당 {} 키워드를 넣는 코드
+            if answer == 'y' or answer == 'Y' or answer == 'yes':
+                return knowledge[i]
+        print('You did not select the any choices. Please choose again.')
+
+
+def menu_check(knowledge, q, select):
+    '''
+    메뉴 체크
+    :param knowledge:술어논리 진행을 위해 구축된  지식
+    :param q: 질의 문장
+    :param select: 답변 직접 선택 여부
+    :return: 선택한 결과 knowledge 반환
+    '''
+    menu_index = {}
+    for menus in knowledge: # 리스트 형식인 knowledge의 식당의 메뉴리스트를 하나씩 모두 불러옵니다
+        restaurant = menus[1]
+        for menu in menus[0]:# 리스트 형식인 knowledge의 메뉴를 하나씩 모두 불러옵니다
+            if menu in menu_index: # key (menu)에 해당하는 답이 있으면 restaurant
+                menu_index[menu].append(restaurant)
+            else:
+                menu_index[menu] = [restaurant] # key (menu)에 해당하는 답이 없으면 restaurant라는 list를 넣어서 만들어줌
+    if select: #true값이면 아래 프린트후 추론 응답 직접입력, false값이면 아래 while true로 가서 제시된 knowledge base 중 원하는 것을 yes, no로 응답 입력 
+        print(', '.join(menu_index.keys()))
+        while True:
+            answer = input('Please enter a keyword :')
+            if answer in menu_index:
+                return menu_index[answer]
+            print('There is no data that corresponds to your input. Please type it again.')
+    while True: #true가 아니면, 하나씩 물어보는것
+        for k in menu_index.keys():
+            answer = input(q.format(k))
+            if answer == 'y' or answer == 'Y' or answer == 'yes':
+                return menu_index[k]
+        print('You did not select the any choices. Please choose again.')
+
+def predicate_logic(knowledge_dict):
+    '''
+    술어논리 진행을 위해 구축된 사전 형식의 지식을 통해
+    위치, 날짜, 시간(아침, 점심, 저녁), 메뉴를 확인해 식당을 반환
+    :param knowledge_dict: 술어논리 진행을 위해 구축된 사전 형식의 지식 - knowledge base
+    :return: None
+    '''
+    print(script)
+    while True:
+        # 위치 선택
+        select = select_enter('Which side of the restaurants are you finding from the school main entrance? If you want to directly input text, type ‘yes’, and if you want to be provided with a location reference, type ‘no’.')
+        knowledge = dict_check(knowledge_dict, location_q, select)  
+        if knowledge is None:
+            if check_stop():
+                break
+            continue
+        # 날짜 선택
+        select = select_enter('What date are you looking for? If you want to directly input text, type ‘yes’, and if you want to be provided with a date reference, type ‘no’.')
+        knowledge = dict_check(knowledge, day_q, select)
+        if knowledge is None:
+            if check_stop():
+                break
+            continue
+        # 시간 선택
+        select = select_enter('When is the meal time you are looking for? If you want to directly input text, type ‘yes’, and if you want to be provided with a time reference, type ‘no’.')
+        knowledge = time_check(knowledge, time_q, select)
+        if knowledge is None:
+            if check_stop():
+                break
+            continue
+        # 메뉴 선택
+        select = select_enter('What menu are you looking for? If you want to directly input text, type ‘yes’, and if you want to be provided with a menu reference, type ‘no’.')
+        result = menu_check(knowledge, menu_q, select)
+        if result is None: #만약 결과가 없을 경우
+            if check_stop(): #check stop이 true이면, 프로그램을 종료하고 나가고, check stop이 아니면, 계속 진행
+                break
+            continue
+            
+        print('Go to restaurant {}.'.format(' or '.join(result))) # 추론을 통한 식당 결과를 받아 출력함
+        answer = input('Would you like to continue? : ')
+        if answer == 'y' or answer == 'Y' or answer == 'yes':
+            continue
+        break
+
+
+predicate_logic(knowledge_dict)
